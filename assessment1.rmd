@@ -1,0 +1,37 @@
+---
+title: "Assessment 1.1"
+author: "Philip Thilani-4629240"
+date: "5/14/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+[link](https://rmarkdown.rstudio.com/lesson-8.html)
+
+#RMarkdown editing
+R Markdown is a *file* format for making **dynamic** documents with R. An *R Markdown* document is written in markdown (an easy-to-write plain text format) and contains **chunks of** embedded R code.
+
+```{r}
+library(tidyverse)
+
+fastfood<-read_csv("https://raw.githubusercontent.com/rfordatascience/tidytuesday/master/data/2018/2018-09-04/fastfood_calories.csv")
+
+#the *data* is loaded in a **new** variable `fastfood`
+
+fastfood%>%head(10)
+
+fastfood%>%filter(calories>1000)
+
+library(tidyverse)
+dont_eat_this<-fastfood%>%filter(total_carb>80 & total_fat>40)
+
+
+
+fastfood%>%head()
+
+
+
+```
+
