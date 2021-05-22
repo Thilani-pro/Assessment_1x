@@ -1,6 +1,6 @@
 ---
-title: "Assessment 1.2"
-author: "Philip Thilani-4629240"
+title: "assessment 1.2"
+author: "Philip Thilani-s4629240"
 date: "5/22/2021"
 output: html_document
 ---
@@ -8,7 +8,6 @@ output: html_document
 ```{r setup, include=FALSE}
 knitr::opts_chunk$set(echo = TRUE)
 ```
-
 #2
 
 #Data wrangling
@@ -82,6 +81,4 @@ fastfood%>%ggplot(
 )+
   geom_point()
 ```
-
-
 
